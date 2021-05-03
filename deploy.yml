@@ -3,17 +3,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: myd
-  name: myd
+    app: myd1111111
+  name: myd1111111
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myd
+      app: myd111111
   template:
     metadata:
       labels:
-        app: myd
+        app: myd111111
     spec:
       containers:
       - image: vimal13/apache-webserver-php
