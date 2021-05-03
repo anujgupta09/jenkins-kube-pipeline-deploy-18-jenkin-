@@ -5,6 +5,7 @@ pipeline{
       stage("1st"){
         steps{
           echo 'I am SMART'
+          sh 'ls -l'
         }
       }
     }  
