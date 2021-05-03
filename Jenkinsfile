@@ -3,6 +3,9 @@ pipeline{
   agent any
     stages{
       stage("1st"){
+        when{
+          false
+        }
         steps{
           echo 'I am SMART'
           sh 'ls -l'
