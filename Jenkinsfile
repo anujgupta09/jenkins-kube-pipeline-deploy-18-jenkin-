@@ -6,7 +6,7 @@ pipeline{
         steps{
           echo 'I am SMART'
           sh 'ls -l'
-          sh "kubectl get pods --kubeconfig /admin.conf"
+          sh "kubectl get pods --kubeconfig admin.conf"
           echo 'yeahhhhhhhhh'
         }
       }
