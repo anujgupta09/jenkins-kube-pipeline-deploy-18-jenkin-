@@ -4,7 +4,9 @@ pipeline{
     stages{
       stage("1st"){
         when{
-          false
+          expression {
+              false
+          }
         }
         steps{
           echo 'I am SMART'
