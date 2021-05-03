@@ -1,11 +1,14 @@
 
-pipeline{ 
+pipeline{
   agent any
+  parameters{
+  booleanParam(name: "isdeploy" , defaultValue=: false)
+  }
     stages{
       stage("1st"){
         when{
           expression {
-              false
+              params.isdeploy
           }
         }
         steps{
@@ -16,5 +19,5 @@ pipeline{
           echo 'yeahhhhhhhhh'
         }
       }
-    }  
+    } 
 }
